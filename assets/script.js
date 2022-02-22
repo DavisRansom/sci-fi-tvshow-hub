@@ -1,6 +1,6 @@
-var inputEl = document.querySelector('#input1');
-var searchButton = document.querySelector('#showSearchButton');
-var outputEl = document.querySelector('#resultsArea')
+var inputEl = document.querySelector('header nav input');
+var searchButton = document.querySelector('header nav button');
+var outputEl = document.querySelector('main');
 
 async function showSearch() {
     //grab the input from inputEl
@@ -25,6 +25,7 @@ function appendShowInfo (sfShows) {
         const showSummary = show.summary;
         const showSite = show.officialSite;
         HTML += `
+            <button>
             <figure>
                 <img src="${img}">
                 <figcaption>
@@ -33,6 +34,7 @@ function appendShowInfo (sfShows) {
                     <a href="${showSite}">Visit Official Site</a>
                 </figcaption>
             </figure>
+            </button>
         `;
     }
     outputEl.innerHTML=HTML;

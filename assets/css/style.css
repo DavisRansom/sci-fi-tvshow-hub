@@ -1,3 +1,64 @@
-#input1 {background-color:aqua};
-.header {color:aqua};
-body {background-color: seashell};
+html {
+    background-image: url('../images/UW_vs_Utah_vball_27525.jpeg');
+    background-position: cover;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 850px;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+main button {
+    border: 0;
+    cursor: pointer;
+    margin:10px;
+    padding: 0;
+}
+
+main figure {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    background-color: rgba(100, 100, 100, 0.75);
+    width: 150px;
+}
+
+main figure img {
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+main figcaption {
+    display: none;
+}
+
+aside {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+aside figure {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    padding: 20px;
+}
